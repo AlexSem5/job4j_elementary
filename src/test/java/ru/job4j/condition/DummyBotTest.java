@@ -9,25 +9,25 @@ class DummyBotTest {
 
     @Test
     void whenGreetBot() {
-        String in = "Hi, Bot.";
+        String in = "Привет, Бот.";
         String result = DummyBot.answer(in);
-        String expected = "Hi, smart man";
+        String expected = "Привет, умник.";
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
     void whenSayByeBot() {
-        String in = "Bye.";
+        String in = "Пока.";
         String result = DummyBot.answer(in);
-        String expected = "See you later";
+        String expected = "Увидимся позже";
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
     void whenSayLoveBot() {
-        String in = "I love you, Bot";
+        String in = "Можешь сложить два плюс два";
         String result = DummyBot.answer(in);
-        String expected = "It confuses me. Ask another question.";
+        String expected = "Я не знаю. Задайте другой вопрос.";
         assertThat(result).isEqualTo(expected);
     }
 
