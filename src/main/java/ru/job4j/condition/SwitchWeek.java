@@ -31,28 +31,6 @@ public class SwitchWeek {
         }
         return name;
     }
-
-    public static String nameOfDay3(int day) {
-        String name = switch (day) {
-            case 1 -> "Понедельник";
-            case 2 -> "Вторник";
-            case 3 -> "Среда";
-            case 4 -> "Четверг";
-            case 5 -> {
-                System.out.println("Hello Friday");
-                yield "Пятница";
-            }
-            case 6 -> "Суббота";
-            case 7 -> "Воскресенье";
-            default -> "Ошибка";
-        };
-        return name;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(nameOfDay(10));
-        System.out.println(nameOfDay3(5));
-    }
 }
 
 
