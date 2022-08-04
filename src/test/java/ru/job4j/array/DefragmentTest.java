@@ -39,7 +39,7 @@ public class DefragmentTest {
     }
 
     @Test
-    public void notAllAtFirstNull() {
+    public void noAllAtFirstNull() {
         String[] input = {null, null, null, "I", "wanna", "be", "compressed"};
         String[] result = Defragment.compress(input);
         String[] expected = {"I", "wanna", "be", "compressed", null, null, null};
