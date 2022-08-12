@@ -1,9 +1,7 @@
 package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.*;
 
 public class DefragmentTest {
     @Test
