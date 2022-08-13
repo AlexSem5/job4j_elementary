@@ -9,28 +9,32 @@ class MaxTest {
 
     @Test
     void whenMax3To5Then5() {
-        int left = 3;
-        int right = 5;
+        int first = 3;
+        int second = 5;
         int expected = 5;
-        int result = Max.max(left, right);
+        int result = Max.max(first, second);
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenMax5To5Then() {
-        int left = 5;
-        int right = 5;
-        int expected = 5;
-        int result = Max.max(left, right);
-        assertThat(result).isEqualTo(expected);
-    }
-
-    @Test
-    void whenMax7To5Then7() {
-        int left = 7;
-        int right = 5;
+    void whenMax3To5To7Then7() {
+        int first = 3;
+        int second = 5;
+        int third = 7;
         int expected = 7;
-        int result = Max.max(left, right);
+        int result = Max.max(first, second, third);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax3To5To7To11Then11() {
+        int first = 3;
+        int second = 5;
+        int third = 7;
+        int fourth = 11;
+        int expected = 11;
+        int result = Max.max(first, second, third, fourth);
+        assertThat(result).isEqualTo(expected);
+    }
+
 }
